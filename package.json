@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@types/node": "^24.1.0",
     "@vite-pwa/nuxt": "^1.0.4",
     "cheerio": "^1.0.0",
     "nuxt": "^3.16.2",
