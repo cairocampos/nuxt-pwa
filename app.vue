@@ -5,7 +5,7 @@
     <PWAInstallPrompt />
     
     <!-- Botão de atualização se disponível -->
-    <div v-if="true" class="update-banner">
+    <div v-if="isUpdateAvailable" class="update-banner">
       <p>Nova versão disponível!</p>
       <button @click="updateServiceWorker">
         Atualizar
