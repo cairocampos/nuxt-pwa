@@ -34,6 +34,10 @@ export const usePWA = () => {
       }
     }
   }
+
+  const testador = () => {
+    alert(window.navigator.userAgent)
+  }
   
   onMounted(() => {
     checkInstallStatus()
@@ -44,6 +48,7 @@ export const usePWA = () => {
     isInstalled: readonly(isInstalled),
     isUpdateAvailable: readonly(isUpdateAvailable),
     updateServiceWorker,
-    checkForUpdates
+    checkForUpdates,
+    testador
   }
 }
